@@ -6,7 +6,7 @@ var connection = mysql.createConnection({
   database : 'node'
 });
 connection.connect()
-var  sAddSql = 'INSERT INTO students(name,age,id) VALUES(1,17,2)';
+var  sAddSql = 'INSERT INTO students(name,age,id) VALUES(1,17,3)';
 connection.query(sAddSql, (err, res) => {
     console.log(err, res)
 })

@@ -1,0 +1,104 @@
+img {
+  vertical-align: middle;
+}
+body {
+  content: "";
+  display: block;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #fff;
+}
+.themeprimary {
+  color: #409eff!important;
+}
+.handsontable td, .handsontable th {
+  word-break: break-all;
+  font: 14px 'Open Sans','Segoe UI'!important;
+}
+.currentRow {
+  background-color: #FFF3C6 !important;
+}
+.handsontable th{
+  /* background-color: #f3f3f3;
+  color: #222;
+  text-align: center;
+  font-weight: 400; */
+}
+/*移动端需要平滑滚动以及回弹效果的，则可以直接添加class:scroll-touch*/
+.scroll-touch {
+  -webkit-overflow-scrolling : touch;
+}
+.red-text {
+  color: red
+}
+.pointer{
+  cursor: pointer;
+}
+.center {
+  text-align: center
+}
+
+.center-block {
+  display: block;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.hide,
+.none {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+/* 占位，但看不见的 */
+.invisible {
+  visibility: hidden;
+}
+
+/* 文字隐藏 */
+.text-hide {
+  border: 0;
+  font: 0/0 a;
+  color: transparent;
+  background-color: transparent;
+  text-shadow: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+ display: table;
+ content: " ";
+}
+
+.clearfix:after {
+ clear: both;
+}
