@@ -1,0 +1,10 @@
+$.ajax({
+    type:'get',
+    url:'http://localhost:3002/api',
+    success:function(data){
+        console.log(data)
+    },
+    error:function(err){
+        console.log(err)
+    }
+})
