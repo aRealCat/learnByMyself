@@ -1,4 +1,5 @@
 <template>
+  <div>
     <div class="content">
         <el-form ref="form" :model="form" label-width="80px">
             <el-form-item label="账号">
@@ -7,11 +8,17 @@
             <el-form-item label="密码">
                 <el-input v-model="form.password"></el-input>
             </el-form-item>
+            <el-form-item label="昵称">
+                <el-input v-model="form.name"></el-input>
+            </el-form-item>
             <el-form-item>
                 <el-button @click="regist">注册</el-button>
             </el-form-item>
         </el-form>
     </div>
+    <el-button @click="goback">返回</el-button>
+  </div>
+    
 </template>
 
 <script>
@@ -32,12 +39,25 @@ export default {
   },
   methods: {
     regist () {
-      console.log(this.form)
       http({
-        url: '/api/user/getUser'
+        url: 'api/user/reg' + '?' + 'account=' + this.form.account + '&' + 'password=' + this.form.password+ 'name=' + this.form.name
       }).then(res => {
         console.log(res)
+        if (res.isreg) {
+          this.$message({
+            message: '该账号已注册',
+            type: 'warning'
+          })
+        } else {
+          this.$message({
+            message: '注册成功',
+            type: 'success'
+          })
+        }
       })
+    },
+    goback () {
+      this.$router.push({path:'/login'})
     }
   }
 }

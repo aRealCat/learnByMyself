@@ -1,144 +1,106 @@
-var models = require('../db/db');
-var express = require('express');
-var router = express.Router();
-var mysql = require('mysql');
-var $sql = require('../db/sqlMap');
+var models = require('../db/db')
+var express = require('express')
+var router = express.Router()
+var mysql = require('mysql')
+var $sql = require('../db/sqlMap')
 
 var conn = mysql.createConnection(models.mysql);
 
 conn.connect();
 
-var jsonWrite = function(res, ret) {
-    if(typeof ret === 'undefined') {
-        res.send('err');
+var pool = mysql.createPool( models.mysql );
+// 响应一个JSON数据
+var responseJSON = function (res, ret) {
+    if (typeof ret === 'undefined') {
+      res.json({
+          code: '-200',
+          msg: '操作失败'
+      });
     } else {
-        console.log(ret);
-        res.send(ret);
+      res.json(ret);
     }
-}
+};
+// 注册
+router.get('/reg',function (req, res, next) {
+  // 从连接池获取连接
+  pool.getConnection(function (err, connection) {
+      let param = req.query || req.params
+      let account = param.account
+      let password = param.password
+      let _res = res
+      connection.query($sql.queryAll, function (err, res) {
+          let isreg = false
+          if(res){ // 判断用户是否已注册
+              for (let i=0; i<res.length; i++) {
+                  if(res[i].account == account) {
+                    isreg = true
+                  }
+              }
+          }
+          var data = {res}
+          data.isreg = isreg // 是否注册
+          data.result = true
+          if(isreg) {
+            data.msg = '该账号已被注册'
+          } else {
+              connection.query($sql.insert, [param.account,param.password,param.name], function (err, result) {
+                  if(result) {
+                      data.msg = '注册成功'
+                  } else {
+                      data.result = false
+                      data.msg = '注册失败'
+                  }
+              })
+          }
+          if(err) data.err = err
+          setTimeout(function () {
+              responseJSON(_res, data)
+          },300)
+          // 释放链接
+          connection.release()
 
-var dateStr = function(str) {
-    return new Date(str.slice(0,7));
-}
+      });
+  });
+})
+// 用户登录
+router.get('/login',function (req, res, next) {
+  // 从连接池获取连接
+  pool.getConnection(function (err, connection) {
+      // 获取前台页面传过来的参数
+      var param = req.query || req.params;
+      var account = param.account;
+      var password = param.password;
+      var _res = res;
+      connection.query($sql.queryAll, function (err, res, result) {
+          var isTrue = false
+          let user = {}
+          if(res){
+              for (var i=0;i<res.length;i++) {
+                  if(res[i].account == account && res[i].password == password) {
+                      isTrue = true;
+                      user = res[i]
+                  }
+              }
+          }
+          var data = {};
+          data.result = true
+          data.allUsers = res
+          data.user = user
+          data.mypost = {account, password}
+          data.isLogin = isTrue
+          if(isTrue) {
+          } else { 
+          }
+          if(err) data.err = err;
+          // 以json形式，把操作结果返回给前台页面
+          responseJSON(_res, data);
 
-// 增加用户接口
-router.post('/addUser', (req, res) => {
-    var sql = $sql.user.add;
-    var params = req.body;
-    console.log(params);
-    console.log(params.birth);
-    conn.query(sql, [params.name, params.account, params.pass, params.checkPass,
-                    params.email, params.phone, params.card, dateStr(params.birth), params.sex], function(err, result) {
-        if (err) {
-            console.log(err);
-        }
-        if (result) {
-            jsonWrite(res, result);
-        }
-    })
-});
+          // 释放链接
+          connection.release();
 
-//查找用户接口
-router.post('/login', (req, res) => {
-    var sql_name = $sql.user.select_name;
-    // var sql_password = $sql.user.select_password;
-    var params = req.body;
-    console.log(params);
-    if (params.name) {
-        sql_name += "where username ='"+ params.name +"'";
-    }
-    var keywords = JSON.parse(Object.keys(params)[0]);
-    conn.query(sql_name, params.name, function(err, result) {
-        if (err) {
-            console.log(err);
-        }
-        // console.log(result);
-        if (result[0] === undefined) {
-            res.send('-1')   //查询不出username，data 返回-1
-        } else {
-            var resultArray = result[0];
-            console.log(resultArray.password);
-           // console.log(keywords);
-            if(resultArray.password === keywords.password) {
-                jsonWrite(res, result);
-            } else {
-                res.send('0')   //username
-            }
-        }
-    })
-});
-
-//获取用户信息
-router.get('/getUser', (req, res) => {
-    var sql_name = $sql.user.select_name;
-    // var sql_password = $sql.user.select_password;
-    var params = req.body;
-    console.log('user')
-    console.log(params);
-    if (params.name) {
-        sql_name += "where username ='"+ params.name +"'";
-    }
-    conn.query(sql_name, params.name, function(err, result) {
-        if (err) {
-            console.log(err);
-        }
-        // console.log(result);
-        if (result[0] === undefined) {
-            res.send('-1')   //查询不出username，data 返回-1
-        } else {
-            jsonWrite(res, result);
-        }
-    })
-});
-
-//更新用户信息
-router.post('/updateUser', (req, res) => {
-    var sql_update = $sql.user.update_user;
-    var params = req.body;
-    console.log(params);
-    if (params.id) {
-        sql_update  += " email = '" + params.email +
-                        "',phone = '" + params.phone +
-                        "',card = '" + params.card +
-                        "',birth = '" + params.birth +
-                        "',sex = '" + params.sex +
-                        "' where id ='"+ params.id + "'";
-    }    
-    conn.query(sql_update, params.id, function(err, result) {
-        if (err) {
-            console.log(err);
-        }
-        console.log(result);
-        if (result.affectedRows === undefined) {
-            res.send('更新失败，请联系管理员')   //查询不出username，data 返回-1
-        } else {
-            res.send('ok'); 
-        }
-    })
-});
-
-//更改密码
-router.post('/modifyPassword', (req, res) => {
-    var sql_modify = $sql.user.update_user;
-    var params = req.body;
-    console.log(params);
-    if (params.id) {
-        sql_modify +=  " password = '" + params.pass +
-                        "',repeatPass = '" + params.checkPass +
-                        "' where id ='"+ params.id + "'";
-    }
-    conn.query(sql_modify, params.id, function(err, result) {
-        if (err) {
-            console.log(err);
-        }
-        // console.log(result);
-        if (result.affectedRows === undefined) {
-            res.send('修改密码失败，请联系管理员')   //查询不出username，data 返回-1
-        } else {
-            res.send('ok'); 
-        }
-    })
-});
+      });
+  });
+})
 
 
 module.exports = router;

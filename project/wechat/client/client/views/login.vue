@@ -33,7 +33,21 @@ export default {
   },
   methods: {
     login () {
-      console.log(this.config)
+      http({
+        url: 'api/user/login' + '?' + 'account=' + this.form.account + '&' + 'password=' + this.form.password
+      }).then(res => {
+        console.log(res)
+        if (res.isLogin) {
+          this.$router.push({name:'chat', params: {
+            user: res.user
+          }})
+        } else {
+          this.$message({
+            message: '登录失败,请检查账号密码',
+            type: 'warning'
+          })
+        }
+      })
     },
     regist () {
       this.$router.push({path:'/regist'})
