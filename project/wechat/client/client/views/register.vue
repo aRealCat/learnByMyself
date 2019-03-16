@@ -40,7 +40,7 @@ export default {
   methods: {
     regist () {
       http({
-        url: '/reg' + '?' + 'account=' + this.form.account + '&' + 'password=' + this.form.password+ 'name=' + this.form.name,
+        url: 'api/reg' + '?' + 'account=' + this.form.account + '&' + 'password=' + this.form.password+ 'name=' + this.form.name,
         method: 'get'
       }).then(res => {
         console.log(res)
@@ -58,7 +58,7 @@ export default {
       })
     },
     goback () {
-      this.$router.push({path:'/login'})
+      this.$router.push({path:'/userlogin'})
     }
   }
 }

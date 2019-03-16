@@ -1,22 +1,22 @@
 import Error from '@/views/error'
 import Layout from '@/layout/layout'
 import goldhistory from '@/views/goldhistory/goldhistory'
-import login from '@/views/login'
+import userlogin from '@/views/userlogin'
 import register from '@/views/register'
 import chat from '@/views/chat'
 export default [
   {
     path: '/',
-    redirect: '/login'
+    redirect: '/userlogin'
   },
   {
     path: '/error',
     component: Error
   },
   {
-    path: '/login',
-    component: login,
-    name: 'login'
+    path: '/userlogin',
+    component: userlogin,
+    name: 'userlogin'
   },
   {
     path: '/regist',

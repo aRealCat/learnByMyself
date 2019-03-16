@@ -13,3 +13,6 @@ demo:
   __dirname 表示当前文件所在的目录的绝对路径
   __filename 表示当前文件的绝对路径
   module.filename ==== __filename 等价
+
+新浪云部署node项目 :
+http://blog.sina.com.cn/s/blog_15b78cf500102xdrv.html
