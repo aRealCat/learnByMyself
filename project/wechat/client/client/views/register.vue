@@ -40,7 +40,8 @@ export default {
   methods: {
     regist () {
       http({
-        url: 'api/user/reg' + '?' + 'account=' + this.form.account + '&' + 'password=' + this.form.password+ 'name=' + this.form.name
+        url: '/reg' + '?' + 'account=' + this.form.account + '&' + 'password=' + this.form.password+ 'name=' + this.form.name,
+        method: 'get'
       }).then(res => {
         console.log(res)
         if (res.isreg) {

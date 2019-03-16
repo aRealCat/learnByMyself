@@ -1,0 +1,98 @@
+
+    {
+        "result": true,
+        "buttonGroup": [
+            {
+                "button_id": "BNT9381",
+                "code": "1035-01",
+                "name": "查询",
+                "menu_id": "MENU4461",
+                "button_method": "post",
+                "class": "btn btn-default  btn-sm",
+                "type": "button",
+                "icon": "fa fa-edit themeprimary",
+                "click": "search()",
+                "actionUrl": "/archives/goldhistory/table",
+                "disabled": "",
+                "remark": "",
+                "parent": "",
+                "grade": 1,
+                "lft": 0,
+                "rgt": 1,
+                "dr": 0,
+                "ver": 0
+            }
+        ],
+        "tableHeader": [
+            {
+                "data": "updateAt",
+                "displayName": "更新时间",
+                "field": "updateAt",
+                "type": "date",
+                "width": "120"
+            },
+            {
+                "data": "open",
+                "displayName": "开盘价",
+                "width": "100"
+            },
+            {
+                "data": "hight",
+                "displayName": "最高价",
+                "width": "100"
+            },
+            {
+                "data": "low",
+                "displayName": "最低价",
+                "width": "100"
+            },
+            {
+                "data": "close",
+                "displayName": "收盘价",
+                "field": "close",
+                "width": "100"
+            },
+            {
+                "data": "percent",
+                "displayName": "涨跌幅",
+                "field": "percent",
+                "width": "100"
+            },
+            {
+                "data": "yestodayclose",
+                "displayName": "昨日收盘价",
+                "width": "100"
+            },
+            {
+                "data": "vol",
+                "displayName": "成交量",
+                "width": "100"
+            },
+            {
+                "data": "amo",
+                "displayName": "成交金额",
+                "width": "160"
+            },
+            {
+                "data": "createAt",
+                "displayName": "开始时间",
+                "width": "150"
+            },
+            {
+                "data": "priceType",
+                "displayName": "类型",
+                "width": "100"
+            },
+            {
+                "data": "lastAt",
+                "displayName": "结束时间",
+                "width": "150"
+            }
+        ],
+        "selectPages": [
+            "100",
+            "500",
+            "1000",
+            "5000"
+        ]
+    }

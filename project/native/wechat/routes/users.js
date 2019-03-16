@@ -16,58 +16,48 @@ var responseJSON = function (res, ret) {
       res.json(ret);
     }
 };
-// 用户注册
+// 注册
 router.get('/reg',function (req, res, next) {
   // 从连接池获取连接
   pool.getConnection(function (err, connection) {
-      // 获取前台页面传过来的参数
-      var param = req.query || req.params;
-      var account = param.account;
-      var password = param.password;
-      var _res = res;
+      let param = req.query || req.params
+      let account = param.account
+      let password = param.password
+      let _res = res
       connection.query(userSQL.queryAll, function (err, res) {
-          var isTrue = false;
-          if(res){ //获取用户列表，循环遍历判断当前用户是否存在
-              for (var i=0;i<res.length;i++) {
-                  if(res[i].account == account && res[i].account == password) {
-                      isTrue = true;
+          let isreg = false
+          if(res){ // 判断用户是否已注册
+              for (let i=0; i<res.length; i++) {
+                  if(res[i].account == account) {
+                    isreg = true
                   }
               }
           }
-          var data = {};
-          data.isreg = !isTrue; //如果isTrue布尔值为true则登陆成功 有false则失败
-          if(isTrue) {
-              data.result = {
-                  code: 1,
-                  msg: '用户已存在'
-              };//登录成功返回用户信息
+          var data = {res}
+          data.isreg = isreg // 是否注册
+          data.result = true
+          if(isreg) {
+            data.msg = '该账号已被注册'
           } else {
-              connection.query(userSQL.insert, [param.account,param.password], function (err, result) {
+              connection.query(userSQL.insert, [param.account,param.password,param.name], function (err, result) {
                   if(result) {
-                      data.result = {
-                          code: 200,
-                          msg: '注册成功'
-                      };
+                      data.msg = '注册成功'
                   } else {
-                      data.result = {
-                          code: -1,
-                          msg: '注册失败'
-                      };
+                      data.result = false
+                      data.msg = '注册失败'
                   }
-              });
+              })
           }
-          if(err) data.err = err;
-          // 以json形式，把操作结果返回给前台页面
+          if(err) data.err = err
           setTimeout(function () {
               responseJSON(_res, data)
-          },300);
-          // responseJSON(_res, data);
+          },300)
           // 释放链接
-          connection.release();
+          connection.release()
 
       });
   });
-});
+})
 // 用户登录
 router.get('/login',function (req, res, next) {
   // 从连接池获取连接
@@ -78,27 +68,25 @@ router.get('/login',function (req, res, next) {
       var password = param.password;
       var _res = res;
       connection.query(userSQL.queryAll, function (err, res, result) {
-          var isTrue = false;
-          if(res){ //获取用户列表，循环遍历判断当前用户是否存在
+          console.log(err, res, result)
+          var isTrue = false
+          let user = {}
+          if(res){
               for (var i=0;i<res.length;i++) {
-                  if(res[i].account == account && res[i].account == password) {
+                  if(res[i].account == account && res[i].password == password) {
                       isTrue = true;
+                      user = res[i]
                   }
               }
           }
           var data = {};
-          data.isLogin = isTrue; //如果isTrue布尔值为true则登陆成功 有false则失败
+          data.result = true
+          data.allUsers = res
+          data.user = user
+          data.mypost = {account, password}
+          data.isLogin = isTrue
           if(isTrue) {
-              data.userInfo = {};
-              data.userInfo.account = account;
-              data.userInfo.password = password;
-          } //登录成功返回用户信息
-          if(result) {
-              result = {
-                  code: 200,
-                  msg: 'succeed'
-              };
-              data.result = result;
+          } else {
           }
           if(err) data.err = err;
           // 以json形式，把操作结果返回给前台页面
@@ -109,10 +97,5 @@ router.get('/login',function (req, res, next) {
 
       });
   });
-});
-/* GET users listing. */
-// router.get('/', function(req, res, next) {
-//   res.send('respond with a resource');
-// });
-
+})
 module.exports = router;

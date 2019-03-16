@@ -8,9 +8,9 @@ const {
 
 // 整个项目初始化的时候 请求config参数将全局参数存入store
 router.onReady(() => {
-  store.dispatch('setConfig').then((data) => {
+  //store.dispatch('setConfig').then((data) => {
     app.$mount('#app') // 挂载到html的div
-  })
+  //})
 })
 
 // router.beforeEach((to, from, next) => {

@@ -34,7 +34,8 @@ export default {
   methods: {
     login () {
       http({
-        url: 'api/user/login' + '?' + 'account=' + this.form.account + '&' + 'password=' + this.form.password
+        url: '/login' + '?' + 'account=' + this.form.account + '&' + 'password=' + this.form.password,
+        method: 'get'
       }).then(res => {
         console.log(res)
         if (res.isLogin) {

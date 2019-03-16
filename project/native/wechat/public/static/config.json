@@ -1,0 +1,13 @@
+{
+  "result":true,
+  "msg":"",
+  "_csrf":"sdfsdfsdfdsfdsdfdfdsf=====",
+  "menuId":"12345",
+  "goldhistory":{
+    "menuId": 123,
+    "dataUrl": "../static/json/goldhistory/data.json",
+    "styleUrl":"../static/json/goldhistory/style.json"
+  },
+  "login": "http://localhost:3002/login",
+  "regist": "http://localhost:3002/regist"
+}
