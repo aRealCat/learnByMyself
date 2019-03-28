@@ -5,7 +5,9 @@
 2.Express使用html模板: ejs
   var ejs = require('ejs')  app.engine('html', ejs.__express); app.set('view engine', 'html');
   https://www.cnblogs.com/-nothing-/p/4943354.html
-
+3.HTTP 304状态码的详细讲解， 深入理解HTTP缓存机制及原理
+  https://blog.csdn.net/huwei2003/article/details/70139062
+  https://juejin.im/post/5c93ba526fb9a070ca103898
 
 demo: 
 1.登录注册 https://www.cnblogs.com/Leo_wl/p/4361289.html
@@ -16,3 +18,6 @@ demo:
 
 新浪云部署node项目 :
 http://blog.sina.com.cn/s/blog_15b78cf500102xdrv.html
+
+typescripts + vue:
+1.请求本地json404问题

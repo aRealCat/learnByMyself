@@ -1,0 +1,9 @@
+初始化: https://blog.csdn.net/changhuzhao/article/details/78684967
+1.Electron学习笔记Part3-利用Electron builder应用打包EXE: https://blog.csdn.net/dj513dj/article/details/55253560
+2.Electron-vue脚手架改造vue项目: https://blog.csdn.net/qq_32614411/article/details/80882131
+3.2种打包方法: https://segmentfault.com/a/1190000013924153
+4.Electron build 无法下载 winCodeSign 等资源: https://www.cnblogs.com/savokiss/p/9129956.html
+5.代码编辑热更新:gulp
+6.为什么要学electron: https://blog.csdn.net/wang839305939/article/details/80741100
+7.vue + ts + electron项目搭建：https://segmentfault.com/a/1190000015559639#articleHeader2
+npm和yarn的区别，我们该如何选择? https://www.jianshu.com/p/254794d5e741
