@@ -13,7 +13,26 @@
     "indent": [true, "spaces", 2],
     "interface-name": false,
     "ordered-imports": false,
+    "no-console": false,
+    "whitespace": false,
+    "prefer-const": false,
+    "typedef-whitespace": false,
+    "semicolon": [
+      false,
+      "always"
+    ],
     "object-literal-sort-keys": false,
-    "no-consecutive-blank-lines": false
+    "no-consecutive-blank-lines": false,
+    "arrow-parens": false,
+    "promise-function-async": false,
+    "trailing-comma": [false, {
+            "multiline": {
+                "objects": "ignore",
+                "arrays": "never",
+                "functions": "never",
+                "typeLiterals": "ignore"
+            },
+            "esSpecCompliant": true
+        }]
   }
 }

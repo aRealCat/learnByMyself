@@ -6,4 +6,5 @@
 5.代码编辑热更新:gulp
 6.为什么要学electron: https://blog.csdn.net/wang839305939/article/details/80741100
 7.vue + ts + electron项目搭建：https://segmentfault.com/a/1190000015559639#articleHeader2
+8.Electron 入门案例：读取本地json文件，实现用户登录、修改内容，最小化，最大化，关闭窗口 https://blog.csdn.net/baidu_38599048/article/details/82258958
 npm和yarn的区别，我们该如何选择? https://www.jianshu.com/p/254794d5e741
