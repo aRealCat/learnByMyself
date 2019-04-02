@@ -1,0 +1,42 @@
+{
+  "result":true,
+  "msg":"",
+  "_csrf":"sdfsdfsdfdsfdsdfdfdsf=====",
+  "baseUrl": "",
+  "menuId":"12345",
+  "goldhistory":{
+    "menuId": 123,
+    "dataUrl": "../static/json/goldhistory/data.json",
+    "styleUrl":"../static/json/goldhistory/style.json"
+  },
+  "data": [
+    {
+      "title": "产品档案",
+      "update_at": "2018-09-12",
+      "id": "blog01",
+      "subdetail": "任务、文档、日程等每个项目资源现在都有了方便复制和检索的 ID 了。",
+      "detail": "<div> <img src=\"https://api.hiram.cn/img/img?img=9ee34536f33053745cb390ebb1c5afa0858&h=50\"> 任务、文档、日程等每个项目资源现在都有了方便复制和检索的 ID 了。</div>"
+    },
+    {
+      "title": "产品档案",
+      "update_at": "2018-09-12",
+      "id": "blog02",
+      "subdetail": "任务、文档、日程等每个项目资源现在都有了方便复制和检索的 ID 了。",
+      "detail": "<div> <img src=\"https://api.hiram.cn/img/img?img=9ee34536f33053745cb390ebb1c5afa0858&h=50\"> 任务、文档、日程等每个项目资源现在都有了方便复制和检索的 ID 了。</div>"
+    },
+    {
+      "title": "产品档案",
+      "update_at": "2018-09-12",
+      "id": "blog03",
+      "subdetail": "任务、文档、日程等每个项目资源现在都有了方便复制和检索的 ID 了。",
+      "detail": "<div> <img src=\"https://api.hiram.cn/img/img?img=9ee34536f33053745cb390ebb1c5afa0858&h=50\"> 任务、文档、日程等每个项目资源现在都有了方便复制和检索的 ID 了。</div>"
+    },
+    {
+      "title": "产品档案",
+      "update_at": "2018-09-12",
+      "id": "blog04",
+      "subdetail": "任务、文档、日程等每个项目资源现在都有了方便复制和检索的 ID 了。",
+      "detail": "<div> <img src=\"https://api.hiram.cn/img/img?img=9ee34536f33053745cb390ebb1c5afa0858&h=50\"> 任务、文档、日程等每个项目资源现在都有了方便复制和检索的 ID 了。</div>"
+    }
+  ]
+}

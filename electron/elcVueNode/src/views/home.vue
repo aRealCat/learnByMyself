@@ -5,7 +5,7 @@
         <img src="../assets/hiramlogo.png" alt="">
       </div>
       <div class="main-title" style="font-size: 36px;color: #fff;">
-        Vue + Typescript + Electron
+        Vue + NodeJs + Typescript + Electron
         <div style="font-size: 20px;color: #fff;">
         </div>
       </div>
@@ -15,10 +15,10 @@
         <div class="right">
           <div style="width: 80%;margin-top: 20%;">
             <el-form :model="form" status-icon ref="ruleForm2" label-width="100px" class="demo-ruleForm">
-              <el-form-item label="账号" prop="pass">
-                <el-input type="password" v-model="form.account" autocomplete="off"></el-input>
+              <el-form-item label="账号" >
+                <el-input v-model="form.account" autocomplete="off"></el-input>
               </el-form-item>
-              <el-form-item label="密码" prop="checkPass">
+              <el-form-item label="密码">
                 <el-input type="password" v-model="form.password" autocomplete="off"></el-input>
               </el-form-item>
               <el-form-item>
@@ -36,6 +36,7 @@ import _ from 'lodash';
 import { mapState } from 'vuex';
 import { Component, Vue } from 'vue-property-decorator';
 import { State } from 'vuex-class';
+import { http } from '../utils/index'
 @Component({})
 export default class Home extends Vue {
   @State public config: any
@@ -48,23 +49,34 @@ export default class Home extends Vue {
     this.data = this.config.data
   }
   public submitForm() {
-    console.log('sumb')
+    http({
+      url: 'api/login' + '?' + 'account=' + this.form.account + '&' + 'password=' + this.form.password,
+      method: 'get'
+    }).then(res => {
+      if (res.isLogin === true) {
+        this.$router.push(
+          {
+            name: 'detail',
+            params: {},
+          }
+        )
+      } else {
+        this.$message({
+          message: '登录失败,请检查账号密码',
+          type: 'warning'
+        })
+      }
+    })
   }
   public go(item: any) {
     // this.$router.push({name: 'detail', params: {item}});
-    this.$router.push(
-      {
-        name: 'detail',
-        params: {item},
-      },
-    );
   }
 }
 </script>
 <style scoped>
 .header{
   height: 20vh;
-  background-color: #222;
+  background-color: #409eff;
   padding-top: 1vh;
   -webkit-app-region: drag;
 }
