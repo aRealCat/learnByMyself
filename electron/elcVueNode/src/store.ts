@@ -30,8 +30,8 @@ export default new Vuex.Store({
         });
       });
     },
-    setUser({ commit }, { user }) {
-      commit('setUser', {user: user})
+    setUser({ commit }, user ) {
+      commit('setUser', user)
     }
   },
 });
