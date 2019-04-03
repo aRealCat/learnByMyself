@@ -4,11 +4,10 @@
   "_csrf":"sdfsdfsdfdsfdsdfdfdsf=====",
   "baseUrl": "",
   "menuId":"12345",
-  "goldhistory":{
-    "menuId": 123,
-    "dataUrl": "../static/json/goldhistory/data.json",
-    "styleUrl":"../static/json/goldhistory/style.json"
+  "user":{
+    "account": "zyw"
   },
+  "loginUrl": "api/login",
   "data": [
     {
       "title": "产品档案",

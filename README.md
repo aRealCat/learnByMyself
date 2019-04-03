@@ -21,3 +21,6 @@ http://blog.sina.com.cn/s/blog_15b78cf500102xdrv.html
 
 typescripts + vue:
 1.请求本地json404问题
+
+nodejs + websocket聊天室：https://www.cnblogs.com/Wayou/p/hichat_built_with_nodejs_socket.html
+mysql: https://www.cnblogs.com/morgana/p/8491293.html

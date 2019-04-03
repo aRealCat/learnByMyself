@@ -1,48 +1,40 @@
 <template>
     <div>
       <el-button @click="goback">返回</el-button>
+      <el-button @click="send">发送消息</el-button>
+      <div class="main">
+      </div>
     </div>
  </template>
 <script lang="ts">
- import _ from 'lodash';
- import { mapState } from 'vuex';
- import { Component, Vue } from 'vue-property-decorator';
+ import _ from 'lodash'
+ import { mapState } from 'vuex'
+ import { State } from 'vuex-class'
+ import { Component, Vue } from 'vue-property-decorator'
+ import io from 'socket.io-client'
  @Component({})
 export default class Detail extends Vue {
-  public item = {}
+  @State public user
   public mounted() {
+    let socket = io.connect('http://127.0.0.1:3001')
+    socket.emit('start', this.user.account)
+    socket.on('start_response', (data) => {
+      console.log(data)
+      if (data !== true) {
+        this.$message({
+          message: '链接失败',
+          type: 'warning'
+        })
+      }
+    })
   }
   public goback() {
     this.$router.push({name: 'home'})
   }
+  public send() {
+    this.$socket.emit('message', this.user.account)
+  }
 }
 </script>
 <style scoped>
- .title{
-   margin: 0 !important;
-   padding: 0 !important;
- }
- .header{
-   height: 60px;
-   line-height: 60px;
-   padding-left: 60px;
-   color: #555;
-   font-size: 14px;
-   border-bottom: 1px solid #ddd;
- }
- .link{
-   cursor: pointer;
- }
- .link:hover{
-   color:rgba(64, 201, 255, 0.829)
- }
- .body{
-   width: 660px;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 20px;
- }
- .detail{
-   margin-top: 40px;
- }
 </style>

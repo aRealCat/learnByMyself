@@ -4,3 +4,4 @@
 
 3.vue-cli 3.x 配置Axios(proxyTable)跨域代理: https://blog.csdn.net/lj90019002/article/details/81116879
   https://cli.vuejs.org/zh/config/#devserver-proxy
+4.聊天室  https://www.cnblogs.com/Wayou/p/hichat_built_with_nodejs_socket.html

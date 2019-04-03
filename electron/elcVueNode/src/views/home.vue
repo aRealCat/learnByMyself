@@ -5,7 +5,7 @@
         <img src="../assets/hiramlogo.png" alt="">
       </div>
       <div class="main-title" style="font-size: 36px;color: #fff;">
-        Vue + NodeJs + Typescript + Electron
+        Vue + Typescript + Electron
         <div style="font-size: 20px;color: #fff;">
         </div>
       </div>
@@ -35,11 +35,12 @@
 import _ from 'lodash';
 import { mapState } from 'vuex';
 import { Component, Vue } from 'vue-property-decorator';
-import { State } from 'vuex-class';
+import { State, Action } from 'vuex-class';
 import { http } from '../utils/index'
 @Component({})
 export default class Home extends Vue {
   @State public config: any
+  @Action('setUser') setUser
   public form: any = {
     account: null,
     password: null
@@ -50,9 +51,10 @@ export default class Home extends Vue {
   }
   public submitForm() {
     http({
-      url: 'api/login' + '?' + 'account=' + this.form.account + '&' + 'password=' + this.form.password,
+      url: this.config.loginUrl + '?' + 'account=' + this.form.account + '&' + 'password=' + this.form.password,
       method: 'get'
     }).then(res => {
+      this.setUser(res.user)
       if (res.isLogin === true) {
         this.$router.push(
           {
