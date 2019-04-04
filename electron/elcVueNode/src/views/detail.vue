@@ -39,7 +39,7 @@ export default class Detail extends Vue {
   public socket: any = null
   public num: any = 0
   public mounted() {
-    this.socket = io.connect('http://192.168.48.65:3001')
+    this.socket = io.connect('http://192.168.48.64:3001')
     this.socket.emit('start', this.user.account)
     this.socket.on('start_response', (data) => {
       if (data !== true) {
