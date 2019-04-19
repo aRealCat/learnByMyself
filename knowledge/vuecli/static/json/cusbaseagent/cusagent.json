@@ -1,0 +1,96 @@
+
+    {   
+        "result":true,
+        "data": [
+            {
+                "id": "7ec64d40-4606-11e8-8970-699c537f4fcb",
+                "value": "001111",
+                "part_code": "001111",
+                "supplier_code": "001111",
+                "text": "工厂1",
+                "process": "out",
+                "supplier_id": "7ec64d40-4606-11e8-8970-699c537f4fcb",
+                "cusbase_id": "7ec64d40-4606-11e8-8970-699c537f4fcb"
+            },
+            {
+                "id": "6d8fb4f0-46db-11e8-9752-fb1b0ac67cb2",
+                "value": "12124",
+                "part_code": "12124",
+                "supplier_code": "12124",
+                "text": "12124",
+                "process": "out",
+                "supplier_id": "6d8fb4f0-46db-11e8-9752-fb1b0ac67cb2",
+                "cusbase_id": "6d8fb4f0-46db-11e8-9752-fb1b0ac67cb2"
+            },
+            {
+                "id": "8a594560-46eb-11e8-9347-27fb20967591",
+                "value": "123",
+                "part_code": "123",
+                "supplier_code": "123",
+                "text": "啊啊啊1",
+                "process": "out",
+                "supplier_id": "8a594560-46eb-11e8-9347-27fb20967591",
+                "cusbase_id": "8a594560-46eb-11e8-9347-27fb20967591"
+            },
+            {
+                "id": "2bfdbc00-4c2e-11e7-bb73-ebfeea6bdbad",
+                "value": "02DD0019",
+                "part_code": "02DD0019",
+                "supplier_code": "02DD0019",
+                "text": "意匠",
+                "process": "out",
+                "supplier_id": "2bfdbc00-4c2e-11e7-bb73-ebfeea6bdbad",
+                "cusbase_id": "2bfdbc00-4c2e-11e7-bb73-ebfeea6bdbad"
+            },
+            {
+                "id": "003d78b0-402a-11e7-927f-d56171b3c56a",
+                "value": "0317050001",
+                "part_code": "0317050001",
+                "supplier_code": "0317050001",
+                "text": "盛嘉",
+                "process": "out",
+                "supplier_id": "003d78b0-402a-11e7-927f-d56171b3c56a",
+                "cusbase_id": "003d78b0-402a-11e7-927f-d56171b3c56a"
+            },
+            {
+                "id": "8a5a6870-46eb-11e8-b76b-8bd83680bbe3",
+                "value": "111222",
+                "part_code": "111222",
+                "supplier_code": "111222",
+                "text": "爱爱爱",
+                "process": "out",
+                "supplier_id": "8a5a6870-46eb-11e8-b76b-8bd83680bbe3",
+                "cusbase_id": "8a5a6870-46eb-11e8-b76b-8bd83680bbe3"
+            },
+            {
+                "id": "ab10f0b0-cc0c-11e7-a5b7-05f281fdd80a",
+                "value": "12",
+                "part_code": "12",
+                "supplier_code": "12",
+                "text": "广州市绿翠珠宝有限公司",
+                "process": "out",
+                "supplier_id": "ab10f0b0-cc0c-11e7-a5b7-05f281fdd80a",
+                "cusbase_id": "ab10f0b0-cc0c-11e7-a5b7-05f281fdd80a"
+            },
+            {
+                "id": "48ebed20-9a55-11e6-9573-5d848c34e03d",
+                "value": "gys001",
+                "part_code": "gys001",
+                "supplier_code": "gys001",
+                "text": "海勒工厂",
+                "process": "out",
+                "supplier_id": "48ebed20-9a55-11e6-9573-5d848c34e03d",
+                "cusbase_id": "48ebed20-9a55-11e6-9573-5d848c34e03d"
+            },
+            {
+                "id": "3797e700-c5b2-11e6-80cb-4f0df3014e6e",
+                "value": "kh01",
+                "part_code": "kh01",
+                "supplier_code": "kh01",
+                "text": "美和",
+                "process": "out",
+                "supplier_id": "3797e700-c5b2-11e6-80cb-4f0df3014e6e",
+                "cusbase_id": "3797e700-c5b2-11e6-80cb-4f0df3014e6e"
+            }
+        ]
+    }

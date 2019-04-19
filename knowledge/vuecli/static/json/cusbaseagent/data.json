@@ -1,0 +1,57 @@
+{"result":true,"msg":"\u64cd\u4f5c\u6210\u529f","data":{
+    "cusbase_id": "d5464db0-26c7-11e8-a515-1d414aa9678d",
+    "bloc_id": "21b83e20-99b6-11e6-baae-fd4a6e3be748",
+    "corp_id": "3e0e5420-99cb-11e6-b17f-2d58ed2c8099",
+    "corp_name": "\u6d77\u52d2\u5c55\u5385",
+    "cuscate_id": "53cf1bd0-99c3-11e6-88a9-4fd9431980ff",
+    "cuscate_name": "\u5185\u90e8\u5ba2\u5546",
+    "custype_id": "53cf8600-99c3-11e6-891b-7b271d01e5e7",
+    "custype_name": "\u5ba2\u6237",
+    "cusbase_code": "KE01004",
+    "cusbase_name": "\u7fe0\u7eff",
+    "cusbase_shortname": "\u7fe0\u7eff",
+    "location_id": "3beb90c0-ae23-11e7-8a4f-d11802ffa1b9",
+    "location_name": "\u6842\u6797\u5e02",
+    "email": "756*****@qq.com",
+    "fax": null,
+    "corporate": null,
+    "contacts": "Xxx",
+    "tel": "180779***",
+    "creator": "HUANG",
+    "created_at": "1520950035",
+    "modifier": "HUANG",
+    "updated_at": "1520950035",
+    "seal_person": "",
+    "is_seal": "1",
+    "seal_at": "2015-7-26",
+    "ref_type": "out",
+    "ref_corp": null,
+    "address": null,
+    "zipcode": null,
+    "dr": "0",
+    "ver": "0",
+    "is_company": "0",
+    "serial": "1",
+    "remark": "vue2",
+    "business_type": "0",
+    "verifyCorpId": null,
+    "salesman": null,
+    "cusagent_id": "00790180-26c8-11e8-8736-71a4198b7b88",
+    "print":[
+        {
+            "selected":true,
+            "text":"字印1",
+            "value":"1231"
+        },
+        {
+            "selected":true,
+            "text":"字印2",
+            "value":"1232"
+        },
+        {
+            "selected":true,
+            "text":"字印3",
+            "value":"1233"
+        }
+    ]
+  }}

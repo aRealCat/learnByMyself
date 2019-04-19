@@ -1,0 +1,251 @@
+{
+  "result":true,
+  "msg": "\u64cd\u4f5c\u6210\u529f",
+  
+    "data": [
+      {
+        "id": "bf557100-c5b5-11e6-a7c8-6dad7cbdc86f",
+        "value": "01DD00029",
+        "text": "\u8001\u51e4\u7965\uff08\u4e0a\u6d77\uff09",
+        "cusbase_id": "bf557100-c5b5-11e6-a7c8-6dad7cbdc86f",
+        "part_code": "01DD00029",
+        "cusbase_code": "01DD00029",
+        "process": "out"
+      },
+      {
+        "id": "84aa7420-5c98-11e7-a1c9-57dc7c996e75",
+        "value": "01DD00030",
+        "text": "\u5468\u591a\u94b1",
+        "cusbase_id": "84aa7420-5c98-11e7-a1c9-57dc7c996e75",
+        "part_code": "01DD00030",
+        "cusbase_code": "01DD00030",
+        "process": "out"
+      },
+      {
+        "id": "e905d490-b0c5-11e7-b018-eb6213ef436e",
+        "value": "01DD00035",
+        "text": "\u91d1\u6ee1\u5c4b",
+        "cusbase_id": "e905d490-b0c5-11e7-b018-eb6213ef436e",
+        "part_code": "01DD00035",
+        "cusbase_code": "01DD00035",
+        "process": "out"
+      },
+      {
+        "id": "f4e31180-b0c5-11e7-991a-85c5c2769850",
+        "value": "01DD00036",
+        "text": "\u91d1\u516d\u798f",
+        "cusbase_id": "f4e31180-b0c5-11e7-991a-85c5c2769850",
+        "part_code": "01DD00036",
+        "cusbase_code": "01DD00036",
+        "process": "out"
+      },
+      {
+        "id": "3297b300-bed1-11e7-ad40-9556a999bec2",
+        "value": "01DD00038",
+        "text": "\u91d1\u751f\u91d1",
+        "cusbase_id": "3297b300-bed1-11e7-ad40-9556a999bec2",
+        "part_code": "01DD00038",
+        "cusbase_code": "01DD00038",
+        "process": "out"
+      },
+      {
+        "id": "89966cb0-c4ee-11e7-87a6-9d1dbefcc119",
+        "value": "01DD00039",
+        "text": "\u6d77\u52d2\u5c55\u53851",
+        "cusbase_id": "89966cb0-c4ee-11e7-87a6-9d1dbefcc119",
+        "part_code": "01DD00039",
+        "cusbase_code": "01DD00039",
+        "process": "out"
+      },
+      {
+        "id": "ebaefd00-4cc3-11e7-b9d8-255fe5d684a1",
+        "value": "01DD0008",
+        "text": "\u9f99\u5a01",
+        "cusbase_id": "ebaefd00-4cc3-11e7-b9d8-255fe5d684a1",
+        "part_code": "01DD0008",
+        "cusbase_code": "01DD0008",
+        "process": "out"
+      },
+      {
+        "id": "991dc280-4c2d-11e7-9652-c1c70da93da9",
+        "value": "01DD0025",
+        "text": "\u68a6\u5de5\u573a",
+        "cusbase_id": "991dc280-4c2d-11e7-9652-c1c70da93da9",
+        "part_code": "01DD0025",
+        "cusbase_code": "01DD0025",
+        "process": "out"
+      },
+      {
+        "id": "5e104c40-8869-11e7-993a-d12750433656",
+        "value": "03DD00034",
+        "text": "\u91d1\u751f\u91d1",
+        "cusbase_id": "5e104c40-8869-11e7-993a-d12750433656",
+        "part_code": "03DD00034",
+        "cusbase_code": "03DD00034",
+        "process": "out"
+      },
+      {
+        "id": "0e93c6a0-b313-11e7-a9d6-534cfeb96b7a",
+        "value": "03DD00037",
+        "text": "\u9f99\u5929",
+        "cusbase_id": "0e93c6a0-b313-11e7-a9d6-534cfeb96b7a",
+        "part_code": "03DD00037",
+        "cusbase_code": "03DD00037",
+        "process": "out"
+      },
+      {
+        "id": "742f5ab0-cc31-11e7-9b47-3b60f725cfcc",
+        "value": "11",
+        "text": "\u8001\u51e4\u7965",
+        "cusbase_id": "742f5ab0-cc31-11e7-9b47-3b60f725cfcc",
+        "part_code": "11",
+        "cusbase_code": "11",
+        "process": "out"
+      },
+      {
+        "id": "6d8e6cd0-46db-11e8-a3bb-bb5d78c0f5d9",
+        "value": "121123",
+        "text": "12123",
+        "cusbase_id": "6d8e6cd0-46db-11e8-a3bb-bb5d78c0f5d9",
+        "part_code": "121123",
+        "cusbase_code": "121123",
+        "process": "out"
+      },
+      {
+        "id": "a7d7a950-46db-11e8-ba80-cd1ca6482f6d",
+        "value": "12123",
+        "text": "12123",
+        "cusbase_id": "a7d7a950-46db-11e8-ba80-cd1ca6482f6d",
+        "part_code": "12123",
+        "cusbase_code": "12123",
+        "process": "out"
+      },
+      {
+        "id": "6d91bea0-46db-11e8-aae9-cb72a8504bbe",
+        "value": "12126",
+        "text": "12126",
+        "cusbase_id": "6d91bea0-46db-11e8-aae9-cb72a8504bbe",
+        "part_code": "12126",
+        "cusbase_code": "12126",
+        "process": "out"
+      },
+      {
+        "id": "f05089e0-d4aa-11e7-b5b3-e75876f0a257",
+        "value": "12334",
+        "text": "12",
+        "cusbase_id": "f05089e0-d4aa-11e7-b5b3-e75876f0a257",
+        "part_code": "12334",
+        "cusbase_code": "12334",
+        "process": "out"
+      },
+      {
+        "id": "d7b0bcb0-7751-11e7-a56f-272ab4d2c6a9",
+        "value": "2200040",
+        "text": "dgd",
+        "cusbase_id": "d7b0bcb0-7751-11e7-a56f-272ab4d2c6a9",
+        "part_code": "2200040",
+        "cusbase_code": "2200040",
+        "process": "out"
+      },
+      {
+        "id": "eb2e4760-fb30-11e7-ac0c-5f79fc1af187",
+        "value": "6666",
+        "text": "\u6d4b\u8bd5",
+        "cusbase_id": "eb2e4760-fb30-11e7-ac0c-5f79fc1af187",
+        "part_code": "6666",
+        "cusbase_code": "6666",
+        "process": "out"
+      },
+      {
+        "id": "ccd9c540-abc9-11e6-a43a-6f3544b38619",
+        "value": "gy002",
+        "text": "\u660c\u6e90\u8fbe",
+        "cusbase_id": "ccd9c540-abc9-11e6-a43a-6f3544b38619",
+        "part_code": "gy002",
+        "cusbase_code": "gy002",
+        "process": "out"
+      },
+      {
+        "id": "5f441330-c5b2-11e6-9c2d-09da4af6b267",
+        "value": "gys15",
+        "text": "\u8001\u51e4\u7965(\u957f\u5b89\u5e97)",
+        "cusbase_id": "5f441330-c5b2-11e6-9c2d-09da4af6b267",
+        "part_code": "gys15",
+        "cusbase_code": "gys15",
+        "process": "out"
+      },
+      {
+        "id": "d67db400-cd9f-11e7-b001-695f2d77e1b8",
+        "value": "KE01001",
+        "text": "11",
+        "cusbase_id": "d67db400-cd9f-11e7-b001-695f2d77e1b8",
+        "part_code": "KE01001",
+        "cusbase_code": "KE01001",
+        "process": "out"
+      },
+      {
+        "id": "d5464db0-26c7-11e8-a515-1d414aa9678d",
+        "value": "KE01004",
+        "text": "\u7fe0\u7eff",
+        "cusbase_id": "d5464db0-26c7-11e8-a515-1d414aa9678d",
+        "part_code": "KE01004",
+        "cusbase_code": "KE01004",
+        "process": "out"
+      },
+      {
+        "id": "d6ec3630-2e76-11e8-8dab-d9ec2412dda0",
+        "value": "KE01005",
+        "text": "\u6d4b\u8bd51",
+        "cusbase_id": "d6ec3630-2e76-11e8-8dab-d9ec2412dda0",
+        "part_code": "KE01005",
+        "cusbase_code": "KE01005",
+        "process": "out"
+      },
+      {
+        "id": "df1ddc60-da51-11e7-bf1f-558e462d398c",
+        "value": "KE03001",
+        "text": "\u4e1c\u839e\u91d1\u51e4\u7965",
+        "cusbase_id": "df1ddc60-da51-11e7-bf1f-558e462d398c",
+        "part_code": "KE03001",
+        "cusbase_code": "KE03001",
+        "process": "out"
+      },
+      {
+        "id": "f62f81f0-d4a8-11e7-924b-6790cbf71687",
+        "value": "KE04001",
+        "text": "\u5317\u4eac",
+        "cusbase_id": "f62f81f0-d4a8-11e7-924b-6790cbf71687",
+        "part_code": "KE04001",
+        "cusbase_code": "KE04001",
+        "process": "out"
+      },
+      {
+        "id": "9a3bd4c0-3037-11e8-a258-cff24c6481f6",
+        "value": "KE04002",
+        "text": "\u8d8a\u5a1c\u73e0\u5b9d",
+        "cusbase_id": "9a3bd4c0-3037-11e8-a258-cff24c6481f6",
+        "part_code": "KE04002",
+        "cusbase_code": "KE04002",
+        "process": "out"
+      },
+      {
+        "id": "679d9d10-9a55-11e6-99ad-0f5e76f3b6bb",
+        "value": "kh001",
+        "text": "\u6df1\u5733\u5609\u8a00\u91d1\u54c1\u73e0\u5b9d\u9500\u552e\u6709\u9650\u516c\u53f8",
+        "cusbase_id": "679d9d10-9a55-11e6-99ad-0f5e76f3b6bb",
+        "part_code": "kh001",
+        "cusbase_code": "kh001",
+        "process": "out"
+      },
+      {
+        "id": "b0991ff0-abc9-11e6-9d94-b58f115a747f",
+        "value": "ks002",
+        "text": "\u76db\u5cf0",
+        "cusbase_id": "b0991ff0-abc9-11e6-9d94-b58f115a747f",
+        "part_code": "ks002",
+        "cusbase_code": "ks002",
+        "process": "out"
+      }
+    ]
+  
+}

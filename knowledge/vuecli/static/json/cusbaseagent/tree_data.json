@@ -1,0 +1,257 @@
+{
+  "treeView": [
+    {
+      "code": "KE01004",
+      "text": "\u7fe0\u7eff",
+      "id": "00790180-26c8-11e8-8736-71a4198b7b88",
+      "selected": false
+    },
+    {
+      "code": "12126",
+      "text": "12126",
+      "id": "1",
+      "selected": false
+    },
+    {
+      "code": "KE04001",
+      "text": "\u5317\u4eac",
+      "id": "0bdbf180-fa5c-11e7-a27f-5d00fe46460e",
+      "selected": false
+    },
+    {
+      "code": "KE02042",
+      "text": "yrfdf",
+      "id": "0c962ae0-cdcb-11e7-b090-5f632995552b",
+      "selected": false
+    },
+    {
+      "code": "12334",
+      "text": "12",
+      "id": "3982fa20-d4ab-11e7-8801-df2cff0acc39",
+      "selected": false
+    },
+    {
+      "code": "KE03001",
+      "text": "\u4e1c\u839e\u91d1\u51e4\u7965",
+      "id": "45dc7280-330b-11e8-bae1-971cca0922f7",
+      "selected": false
+    },
+    {
+      "code": "6666",
+      "text": "\u6d4b\u8bd5",
+      "id": "45df0600-330b-11e8-9a09-5b2b7b6522de",
+      "selected": false
+    },
+    {
+      "code": "KE04002",
+      "text": "\u8d8a\u5a1c\u73e0\u5b9d",
+      "id": "45e2b540-330b-11e8-80d9-f9002bdf090f",
+      "selected": false
+    },
+    {
+      "code": "02DD26",
+      "text": "\u5929\u5929\u798f",
+      "id": "5499c5d0-cdcd-11e7-8a2e-e71f66993644",
+      "selected": false
+    },
+    {
+      "code": "666",
+      "text": "\u5fb7\u514b",
+      "id": "58e5fe70-cdcd-11e7-a247-855110b3aab4",
+      "selected": false
+    },
+    {
+      "code": "01DD00030",
+      "text": "\u5468\u591a\u94b1",
+      "id": "648a5e20-9f7e-11e7-80f9-d5774ec72013",
+      "selected": false
+    },
+    {
+      "code": "01DD00029",
+      "text": "\u8001\u51e4\u7965\uff08\u4e0a\u6d77\uff09",
+      "id": "739f9010-9f7d-11e7-82cd-d342a472d918",
+      "selected": false
+    },
+    {
+      "code": "888",
+      "text": "\u91cd\u5e86\u5609\u8a00",
+      "id": "8eba5bc0-055d-11e8-a3e5-3dcb701d8625",
+      "selected": false
+    },
+    {
+      "code": "121123",
+      "text": "12123",
+      "id": "aa345b50-46dd-11e8-bf9b-7f972c448671",
+      "selected": false
+    },
+    {
+      "code": "12123",
+      "text": "12123",
+      "id": "aa356820-46dd-11e8-9916-35b76be16f4b",
+      "selected": false
+    },
+    {
+      "code": "12124",
+      "text": "12124",
+      "id": "aa3b2520-46dd-11e8-a149-231a82bc17ef",
+      "selected": false
+    },
+    {
+      "code": "KE02001",
+      "text": "15",
+      "id": "b8fdaae0-cdd8-11e7-941b-5b88ad51a243",
+      "selected": false
+    },
+    {
+      "code": "zrl",
+      "text": "\u4e0a\u6d77LOL",
+      "id": "ba9d4200-cdc9-11e7-be72-cdd02301284e",
+      "selected": false
+    },
+    {
+      "code": "KE01001",
+      "text": "11",
+      "id": "da1a3440-ce5a-11e7-88b1-299d4726e3c7",
+      "selected": false
+    },
+    {
+      "code": "2200040",
+      "text": "dgd",
+      "id": "da2c35e0-ce5a-11e7-896c-7710018226c3",
+      "selected": false
+    },
+    {
+      "code": "12",
+      "text": "\u5e7f\u5dde\u5e02\u7eff\u7fe0\u73e0\u5b9d\u6709\u9650\u516c\u53f8",
+      "id": "da473860-ce5a-11e7-949f-5d397ed1c2f7",
+      "selected": false
+    },
+    {
+      "code": "02DD0019",
+      "text": "\u610f\u5320",
+      "id": "da54cd20-ce5a-11e7-b17b-5924d277eebb",
+      "selected": false
+    },
+    {
+      "code": "gy002",
+      "text": "\u660c\u6e90\u8fbe",
+      "id": "da5b8400-ce5a-11e7-b9aa-eb8fbcb063c6",
+      "selected": false
+    },
+    {
+      "code": "01DD0025",
+      "text": "\u68a6\u5de5\u573a",
+      "id": "da6213c0-ce5a-11e7-a067-47355487127c",
+      "selected": false
+    },
+    {
+      "code": "01DD00039",
+      "text": "\u6d77\u52d2\u5c55\u53851",
+      "id": "da68caa0-ce5a-11e7-834b-d718c62454f4",
+      "selected": false
+    },
+    {
+      "code": "gys001",
+      "text": "\u6d77\u52d2\u5de5\u5382",
+      "id": "da6f8160-ce5a-11e7-9780-7b701d75d86d",
+      "selected": false
+    },
+    {
+      "code": "gys02",
+      "text": "\u6d77\u52d2\u5de5\u5382\uff08\u4e8c\u5382\uff09",
+      "id": "da765f60-ce5a-11e7-96d1-073bc212fe66",
+      "selected": false
+    },
+    {
+      "code": "kh001",
+      "text": "\u6df1\u5733\u5609\u8a00\u91d1\u54c1\u73e0\u5b9d\u9500\u552e\u6709\u9650\u516c\u53f8",
+      "id": "da7d1640-ce5a-11e7-9cf4-71b9718c4238",
+      "selected": false
+    },
+    {
+      "code": "0317050001",
+      "text": "\u76db\u5609",
+      "id": "da83f420-ce5a-11e7-b550-076e4f4c1860",
+      "selected": false
+    },
+    {
+      "code": "ks002",
+      "text": "\u76db\u5cf0",
+      "id": "da8aab00-ce5a-11e7-a970-67560a045180",
+      "selected": false
+    },
+    {
+      "code": "kh01",
+      "text": "\u7f8e\u548c",
+      "id": "da9188d0-ce5a-11e7-8360-cb483454de79",
+      "selected": false
+    },
+    {
+      "code": "11",
+      "text": "\u8001\u51e4\u7965",
+      "id": "da988de0-ce5a-11e7-9260-9131475f7d15",
+      "selected": false
+    },
+    {
+      "code": "gys15",
+      "text": "\u8001\u51e4\u7965(\u957f\u5b89\u5e97)",
+      "id": "da9f6bc0-ce5a-11e7-b3b3-e366911eb255",
+      "selected": false
+    },
+    {
+      "code": "01DD00036",
+      "text": "\u91d1\u516d\u798f",
+      "id": "daad27a0-ce5a-11e7-bfca-0d3347033cfe",
+      "selected": false
+    },
+    {
+      "code": "01DD00035",
+      "text": "\u91d1\u6ee1\u5c4b",
+      "id": "dab3b760-ce5a-11e7-a4ac-d374186ab301",
+      "selected": false
+    },
+    {
+      "code": "03DD00034",
+      "text": "\u91d1\u751f\u91d1",
+      "id": "dababc50-ce5a-11e7-852b-5f67905dd3c0",
+      "selected": false
+    },
+    {
+      "code": "01DD00038",
+      "text": "\u91d1\u751f\u91d1",
+      "id": "dac1c160-ce5a-11e7-9f0b-6dfa5ff04d2a",
+      "selected": false
+    },
+    {
+      "code": "02DD0024",
+      "text": "\u91d1\u8bfa",
+      "id": "dac89f40-ce5a-11e7-9f02-3d5ed48b814f",
+      "selected": false
+    },
+    {
+      "code": "03DD00037",
+      "text": "\u9f99\u5929",
+      "id": "dacf5610-ce5a-11e7-8aa6-4d7cf7633b6d",
+      "selected": false
+    },
+    {
+      "code": "01DD0008",
+      "text": "\u9f99\u5a01",
+      "id": "dad63400-ce5a-11e7-aabd-270281def300",
+      "selected": false
+    },
+    {
+      "code": "KE01005",
+      "text": "\u6d4b\u8bd51",
+      "id": "dd320450-2e76-11e8-864e-c5bb87f3038a",
+      "selected": false
+    }
+  ],
+  "source": {
+    "cusbase": {
+      "dataSourceUrl": "../static/json/cusbaseagent/source/custype.json"
+    }
+  },
+  "result": true,
+  "msg": "\u64cd\u4f5c\u6210\u529f"
+}

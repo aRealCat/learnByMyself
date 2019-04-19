@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World5!</title>
+  </head>
+  <script src="./vue.js"></script>
+  <body>
+    <div id="app">
+      {{reversedMessage}} vue
+    </div>
+  </body>
+  <script>
+    var vm = new Vue({
+      el: "#app",
+      data: {
+        message: 'hello'
+      },
+      computed: {
+        reversedMessage: function () {
+          return this.message.split('').reverse().join('')
+        }
+      }
+    })
+</script>
+</html>

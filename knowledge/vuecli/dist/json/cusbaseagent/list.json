@@ -1,0 +1,24 @@
+{"result":true,"msg":"\u64cd\u4f5c\u6210\u529f","data":{
+  "print":[
+    {
+      "selected":true,
+      "text":"字印1",
+      "value":"1231"
+    },
+    {
+      "selected":true,
+      "text":"字印2",
+      "value":"1232"
+    },
+    {
+      "selected":true,
+      "text":"字印3",
+      "value":"1233"
+    },
+    {
+      "selected":false,
+      "text":"字印4",
+      "value":"123345"
+    }
+  ]
+}}

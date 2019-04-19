@@ -1,0 +1,537 @@
+{
+    "buttonGroup": [
+        {
+            "button_id": "BNT1729",
+            "code": "100304-01",
+            "name": "增加",
+            "menu_id": "MENU5736",
+            "button_method": "post",
+            "class": "btn btn-default btn-sm shiny",
+            "type": "button",
+            "icon": "fa fa-plus-square-o themeprimary",
+            "click": "add()",
+            "actionUrl": "/archives/cusbase/edit",
+            "disabled": "!dataSource.isReadOnly",
+            "remark": "disabled",
+            "parent": "",
+            "grade": 1,
+            "lft": 0,
+            "rgt": 1,
+            "dr": 0,
+            "ver": 0
+        },
+        {
+            "button_id": "BNT1812",
+            "code": "100304-02",
+            "name": "保存",
+            "menu_id": "MENU5736",
+            "button_method": "post",
+            "class": "btn btn-default btn-sm shiny",
+            "type": "submit",
+            "icon": "fa fa-save themeprimary",
+            "click": "save()",
+            "actionUrl": "/archives/cusbase/edit",
+            "disabled": "vForm.$invalid||dataSource.isReadOnly||vForm.$submitted",
+            "remark": "disabled",
+            "parent": "",
+            "grade": 1,
+            "lft": 2,
+            "rgt": 3,
+            "dr": 0,
+            "ver": 0
+        },
+        {
+            "button_id": "BNT3743",
+            "code": "100304-03",
+            "name": "取消",
+            "menu_id": "MENU5736",
+            "button_method": "post",
+            "class": "btn btn-default btn-sm shiny",
+            "type": "button",
+            "icon": "fa fa-reply themeprimary",
+            "click": "cancel()",
+            "actionUrl": "",
+            "disabled": "dataSource.isReadOnly",
+            "remark": "",
+            "parent": "",
+            "grade": 1,
+            "lft": 4,
+            "rgt": 5,
+            "dr": 0,
+            "ver": 0
+        },
+        {
+            "button_id": "BNT9324",
+            "code": "100304-08",
+            "name": "修改",
+            "menu_id": "MENU5736",
+            "button_method": "post",
+            "class": "btn btn-default btn-sm shiny",
+            "type": "button",
+            "icon": "fa fa-edit themeprimary",
+            "click": "edit()",
+            "actionUrl": "/archives/cusbase/formData",
+            "disabled": "!dataSource.isReadOnly||dataSource.init",
+            "remark": "disabled",
+            "parent": "",
+            "grade": 1,
+            "lft": 12,
+            "rgt": 13,
+            "dr": 0,
+            "ver": 0
+        },
+        {
+            "button_id": "BNT8231",
+            "code": "100304-09",
+            "name": "查看邀请码",
+            "menu_id": "MENU5736",
+            "button_method": "post",
+            "class": "btn btn-default btn-sm shiny",
+            "type": "button",
+            "icon": "fa fa-user themeprimary",
+            "click": "invite()",
+            "actionUrl": "/archives/cusbase/invite",
+            "disabled": "!dataSource.temp.header.items.cusbase_id",
+            "remark": "disabled",
+            "parent": "",
+            "grade": 1,
+            "lft": 14,
+            "rgt": 15,
+            "dr": 0,
+            "ver": 0
+        }
+    ],
+    "header": {
+        "style": {
+            "topItems": 3,
+            "bottomItems": 4
+        },
+        "items": [
+            {
+                "name": "id",
+                "data": "cusbase_id",
+                "type": "hidden",
+                "position": "hidden",
+                "allowEmpty": false,
+                "readonly": true,
+                "index": 1
+            },
+            {
+                "name": "分享码",
+                "data": "invitecode",
+                "field": "inviteCode",
+                "type": "hidden",
+                "position": "hidden",
+                "allowEmpty": true,
+                "readonly": true,
+                "index": 1
+            },
+            {
+                "name": "分享url",
+                "data": "inviteurl",
+                "field": "inviteUrl",
+                "type": "hidden",
+                "position": "hidden",
+                "allowEmpty": true,
+                "readonly": true,
+                "index": 1
+            },
+            {
+                "name": "客商编号",
+                "data": "cusbase_code",
+                "type": "text",
+                "position": "topItems",
+                "allowEmpty": true,
+                "readonly": true,
+                "index": 3
+            },
+            {
+                "name": "客商名称",
+                "data": "cusbase_name",
+                "type": "textblur",
+                "position": "topItems",
+                "allowEmpty": false,
+                "readonly": true,
+                "index": 4,
+                "validate": "reg_name"
+            },
+            {
+                "name": "客商简称",
+                "data": "cusbase_shortname",
+                "type": "text",
+                "position": "topItems",
+                "allowEmpty": false,
+                "readonly": true,
+                "index": 5,
+                "validate": "reg_name"
+            },
+            {
+                "name": "客商分类",
+                "data": "cuscate_id",
+                "type": "select2",
+                "position": "topItems",
+                "allowEmpty": false,
+                "readonly": false,
+                "index": 6,
+                "source": "CusCate_CusCates"
+            },
+            {
+                "name": "客商类型",
+                "data": "custype_id",
+                "type": "select2",
+                "position": "topItems",
+                "allowEmpty": false,
+                "readonly": false,
+                "index": 7,
+                "source": "CusType_cusTypes"
+            },
+            {
+                "name": "地点分类",
+                "data": "location_id",
+                "type": "select2",
+                "position": "topItems",
+                "allowEmpty": false,
+                "readonly": true,
+                "index": 8,
+                "source": "Location_locations"
+            },
+            {
+                "name": "流程",
+                "data": "ref_type",
+                "type": "select2",
+                "position": "topItems",
+                "allowEmpty": false,
+                "readonly": true,
+                "index": 8,
+                "source": "CusBase_refType"
+            },
+            {
+                "name": "标签",
+                "data": "label",
+                "type": "tag",
+                "position": "topItems",
+                "allowEmpty": true,
+                "readonly": true,
+                "source": "Label_labels",
+                "deferred": true,
+                "index": 9
+            },
+            {
+                "name": "传真",
+                "data": "fax",
+                "type": "text",
+                "position": "topItems",
+                "allowEmpty": true,
+                "readonly": true,
+                "index": 12
+            },
+            {
+                "name": "E-mail",
+                "data": "email",
+                "type": "text",
+                "position": "topItems",
+                "allowEmpty": true,
+                "readonly": true,
+                "index": 13
+            },
+            {
+                "name": "联系人",
+                "data": "contacts",
+                "type": "text",
+                "position": "topItems",
+                "allowEmpty": true,
+                "readonly": true,
+                "index": 14
+            },
+            {
+                "name": "电话",
+                "data": "tel",
+                "type": "text",
+                "position": "topItems",
+                "allowEmpty": true,
+                "readonly": true,
+                "index": 16
+            },
+            {
+                "name": "营业地址",
+                "data": "address",
+                "type": "text",
+                "position": "topItems",
+                "allowEmpty": true,
+                "readonly": true,
+                "index": 17
+            },
+            {
+                "name": "邮政编码",
+                "data": "zipcode",
+                "type": "text",
+                "position": "topItems",
+                "allowEmpty": true,
+                "readonly": true,
+                "index": 19
+            },
+            {
+                "name": "法人",
+                "data": "corporate",
+                "type": "text",
+                "position": "topItems",
+                "allowEmpty": true,
+                "readonly": true,
+                "index": 20
+            },
+            {
+                "name": "修改人",
+                "data": "modifier",
+                "type": "text",
+                "position": "topItems",
+                "allowEmpty": true,
+                "readonly": true,
+                "index": 21
+            },
+            {
+                "name": "修改时间",
+                "data": "updated_at",
+                "type": "text",
+                "position": "topItems",
+                "allowEmpty": true,
+                "readonly": true,
+                "index": 22
+            },
+            {
+                "name": "建档人",
+                "data": "creator",
+                "type": "text",
+                "position": "topItems",
+                "allowEmpty": true,
+                "readonly": true,
+                "index": 23
+            },
+            {
+                "name": "建档时间",
+                "data": "created_at",
+                "type": "text",
+                "position": "topItems",
+                "allowEmpty": true,
+                "readonly": true,
+                "index": 24
+            },
+            {
+                "name": "是否封存",
+                "data": "is_seal",
+                "type": "checkbox",
+                "position": "topItems",
+                "allowEmpty": true,
+                "readonly": true,
+                "index": 26
+            },
+            {
+                "name": "所属公司",
+                "data": "corp_id",
+                "type": "select2",
+                "position": "topItems",
+                "allowEmpty": true,
+                "readonly": true,
+                "index": 8,
+                "source": "Corp_corps"
+            },
+            {
+                "name": "封存日期",
+                "data": "seal_at",
+                "type": "date",
+                "position": "topItems",
+                "allowEmpty": true,
+                "readonly": true,
+                "index": 27
+            },
+            {
+                "name": "字印图片",
+                "data": "printImg",
+                "type": "richtext",
+                "position": "topItems",
+                "allowEmpty": true,
+                "readonly": false,
+                "extra": "sale",
+                "index": 30
+            }
+        ]
+    },
+    "source": {
+        "CusType_cusTypes": {
+            "data": [
+                {
+                    "text": "未指定",
+                    "value": "0000",
+                    "id": "0000"
+                },
+                {
+                    "id": "24223540-96c5-11e8-bf60-4dd7b65b98be",
+                    "value": "05",
+                    "text": "零售商"
+                },
+                {
+                    "id": "53cf8600-99c3-11e6-891b-7b271d01e5e7",
+                    "value": "01",
+                    "text": "客户"
+                },
+                {
+                    "id": "53cfa1d0-99c3-11e6-a012-dd72ae4fea88",
+                    "value": "02",
+                    "text": "供应商"
+                },
+                {
+                    "id": "6d00dc80-d4a8-11e7-bfc2-539870f6d8c6",
+                    "value": "04",
+                    "text": "委外客商"
+                }
+            ],
+            "url": ""
+        },
+        "CusCate_CusCates": {
+            "data": [
+                {
+                    "text": "未指定",
+                    "value": "0000",
+                    "id": "0000"
+                },
+                {
+                    "id": "53cf1bd0-99c3-11e6-88a9-4fd9431980ff",
+                    "value": "01",
+                    "text": "内部客商"
+                },
+                {
+                    "id": "53cf36e0-99c3-11e6-bfb6-d3eca30df343",
+                    "value": "02",
+                    "text": "外部客商"
+                }
+            ],
+            "url": ""
+        },
+        "Location_locations": {
+            "data": [
+                {
+                    "text": "未指定",
+                    "value": "0000",
+                    "id": "0000"
+                },
+                {
+                    "id": "17694540-a268-11e7-99ad-4f692fccae9f",
+                    "value": "011",
+                    "text": "上海市"
+                },
+                {
+                    "id": "1d36e790-055d-11e8-801f-f79be5fec3e2",
+                    "value": "888",
+                    "text": "重庆"
+                },
+                {
+                    "id": "3beb90c0-ae23-11e7-8a4f-d11802ffa1b9",
+                    "value": "05",
+                    "text": "桂林市"
+                },
+                {
+                    "id": "4a2464f0-d4a8-11e7-88b5-add05104503f",
+                    "value": "0235",
+                    "text": "北京"
+                },
+                {
+                    "id": "53ce7440-99c3-11e6-b5bf-5d1e2f9ce751",
+                    "value": "01",
+                    "text": "东莞市"
+                },
+                {
+                    "id": "53cec770-99c3-11e6-a95b-9b8b250f8f5f",
+                    "value": "02",
+                    "text": "深圳市"
+                },
+                {
+                    "id": "ab73b0e0-5491-11e7-a315-55eda980ec39",
+                    "value": "03",
+                    "text": "珠海市"
+                },
+                {
+                    "id": "c87611a0-baea-11e7-acec-957815510c19",
+                    "value": "04",
+                    "text": "昆明"
+                },
+                {
+                    "id": "d5ff8b50-cc0a-11e7-8e5b-0f9ef22e3563",
+                    "value": "07",
+                    "text": "广州市"
+                },
+                {
+                    "id": "dba016a0-baea-11e7-b10d-e331d1159e94",
+                    "value": "06",
+                    "text": "丽江"
+                }
+            ],
+            "url": ""
+        },
+        "Corp_corps": {
+            "data": [
+                {
+                    "text": "未指定",
+                    "value": "0000",
+                    "id": "0000"
+                },
+                {
+                    "id": "3e0e5420-99cb-11e6-b17f-2d58ed2c8099",
+                    "value": "01",
+                    "text": "海勒展厅"
+                },
+                {
+                    "id": "438b5ed0-1b89-11e8-9fe0-1dcf531f3f96",
+                    "value": "05",
+                    "text": "海明展厅"
+                },
+                {
+                    "id": "76314dd0-9a59-11e6-99c9-dfc616b25d78",
+                    "value": "02",
+                    "text": "海勒工厂"
+                }
+            ],
+            "url": ""
+        },
+        "CusBase_refType": {
+            "data": [
+                {
+                    "text": "未指定",
+                    "value": "null",
+                    "id": "null"
+                },
+                {
+                    "text": "委外流程",
+                    "value": "out",
+                    "id": "out"
+                },
+                {
+                    "text": "内部流程",
+                    "value": "in",
+                    "id": "in"
+                }
+            ],
+            "url": ""
+        },
+        "Label_labels": {
+            "data": [
+                {
+                    "id": "珠宝公司",
+                    "value": "珠宝公司",
+                    "text": "珠宝公司"
+                },
+                {
+                    "id": "上海",
+                    "value": "上海",
+                    "text": "上海"
+                },
+                {
+                    "id": "VIP",
+                    "value": "VIP",
+                    "text": "VIP"
+                }
+            ],
+            "url": ""
+        }
+    },
+    "result": true,
+    "msg": "操作成功"
+}

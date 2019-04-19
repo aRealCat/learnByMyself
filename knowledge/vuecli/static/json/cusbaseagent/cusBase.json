@@ -1,0 +1,70 @@
+
+    {
+        "result":true,
+      "data": [
+        {
+          "id": "6d8e6cd0-46db-11e8-a3bb-bb5d78c0f5d9",
+          "value": "121123",
+          "text": "12123",
+          "cusbase_id": "6d8e6cd0-46db-11e8-a3bb-bb5d78c0f5d9",
+          "process": "out",
+          "cusagent_id": "aa345b50-46dd-11e8-bf9b-7f972c448671"
+        },
+        {
+          "id": "bf557100-c5b5-11e6-a7c8-6dad7cbdc86f",
+          "value": "12123",
+          "text": "测试",
+          "cusbase_id": "bf557100-c5b5-11e6-a7c8-6dad7cbdc86f",
+          "process": "out",
+          "cusagent_id": "bf557100-c5b5-11e6-a7c8-6dad7cbdc86f"
+        },
+        {
+          "id": "6d90bc50-46db-11e8-a466-07aa5e6dfa16",
+          "value": "12125",
+          "text": "12125",
+          "cusbase_id": "6d90bc50-46db-11e8-a466-07aa5e6dfa16",
+          "process": "out",
+          "cusagent_id": "f33ac780-6249-11e8-a881-f7dc271de864"
+        },
+        {
+          "id": "6d91bea0-46db-11e8-aae9-cb72a8504bbe",
+          "value": "12126233333",
+          "text": "12126",
+          "cusbase_id": "6d91bea0-46db-11e8-aae9-cb72a8504bbe",
+          "process": "out",
+          "cusagent_id": "021c8430-47a4-11e8-9067-554ed08c0a0e"
+        },
+        {
+          "id": "6d92bad0-46db-11e8-ba4d-6501872e6c73",
+          "value": "12127",
+          "text": "12127",
+          "cusbase_id": "6d92bad0-46db-11e8-ba4d-6501872e6c73",
+          "process": "in",
+          "cusagent_id": "f342b7f0-6249-11e8-b81c-475ef5e25994"
+        },
+        {
+          "id": "f05089e0-d4aa-11e7-b5b3-e75876f0a257",
+          "value": "12334",
+          "text": "12",
+          "cusbase_id": "f05089e0-d4aa-11e7-b5b3-e75876f0a257",
+          "process": "out",
+          "cusagent_id": "3982fa20-d4ab-11e7-8801-df2cff0acc39"
+        },
+        {
+          "id": "502baae0-4607-11e8-8d5e-2ff72d979018",
+          "value": "112222",
+          "text": "\u7ca4\u901a\u9ec4\u91d1",
+          "cusbase_id": "502baae0-4607-11e8-8d5e-2ff72d979018",
+          "process": "out",
+          "cusagent_id": "f3a1b3e0-6249-11e8-b24d-932896b16bb4"
+        },
+        {
+          "id": "ef63cbf0-46eb-11e8-9bde-c567f80c9767",
+          "value": "141241",
+          "text": "aadfaf",
+          "cusbase_id": "ef63cbf0-46eb-11e8-9bde-c567f80c9767",
+          "process": "in",
+          "cusagent_id": "f37984c0-6249-11e8-8496-df6a2e5fee9e"
+        }
+      ]
+    }

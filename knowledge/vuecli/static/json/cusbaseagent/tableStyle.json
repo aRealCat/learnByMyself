@@ -1,0 +1,47 @@
+
+    {
+        "result": true,
+        "tableHeader": [
+            {
+                "data": "radio",
+                "renderer": "radio",
+                "displayName": "单选",
+                "className": "htCenter htMiddle",
+                "width": 15,
+                "visible": true
+            },
+            {
+                "data": "check",
+                "displayName": "",
+                "type": "checkbox"
+            },
+            {
+                "data": "id",
+                "displayName": "客户主键",
+                "visible": false
+            },
+            {
+                "data": "process",
+                "displayName": "流程",
+                "visible": false
+            },
+            {
+                "data": "value",
+                "displayName": "客户编号"
+            },
+            {
+                "data": "text",
+                "displayName": "客户名称"
+            },
+            {
+                "data": "cusagent_id",
+                "displayName": "客户主键",
+                "visible": false
+            }
+        ],
+        "selectPages": [
+            "25",
+            "50",
+            "100"
+        ]
+    }

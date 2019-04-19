@@ -1,0 +1,135 @@
+
+    {
+        "result": true,
+        "rows": [
+            {
+                "id": "4441f460-446a-11e8-bfb8-445563d810c2a3",
+                "value": "0000113333",
+                "text": "zyw1",
+                "cusbase_id": "4441f460-446a-11e8-bfb8-4563d810c2a3",
+                "process": "out",
+                "cusagent_id": "f3830030-6249-11e8-9e52-81347d96ebdf"
+            },
+            {
+                "id": "bf557100-c5b5-11e656-a7c8-6dad7cbdc86f",
+                "value": "01DD00029",
+                "text": "老凤祥（上海）",
+                "cusbase_id": "bf557100-c5b5-11e6-a7c8-6dad7cbdc86f",
+                "process": "out",
+                "cusagent_id": "739f9010-9f7d-11e7-82cd-d342a472d918"
+            },
+            {
+                "id": "84aa7420-5c98-11e767-a1c9-57dc7c996e75",
+                "value": "01DD00030",
+                "text": "周多钱",
+                "cusbase_id": "84aa7420-5c98-11e7-a1c9-57dc7c996e75",
+                "process": "out",
+                "cusagent_id": "648a5e20-9f7e-11e7-80f9-d5774ec72013"
+            },
+            {
+                "id": "e905d49045-b0c5-11e7-b018-eb6213ef436e",
+                "value": "01DD00035",
+                "text": "金满屋",
+                "cusbase_id": "e905d490-b0c5-11e7-b018-eb6213ef436e",
+                "process": "out",
+                "cusagent_id": "dab3b760-ce5a-11e7-a4ac-d374186ab301"
+            },
+            {
+                "id": "f4e3118350-b0c5-11e7-991a-85c5c2769850",
+                "value": "01DD00036",
+                "text": "金六福",
+                "cusbase_id": "f4e31180-b0c5-11e7-991a-85c5c2769850",
+                "process": "out",
+                "cusagent_id": "daad27a0-ce5a-11e7-bfca-0d3347033cfe"
+            },
+            {
+                "id": "3297b300-bed1-11e7766-ad40-9556a999bec2",
+                "value": "01DD00038",
+                "text": "金生金",
+                "cusbase_id": "3297b300-bed1-11e7-ad40-9556a999bec2",
+                "process": "out",
+                "cusagent_id": "dac1c160-ce5a-11e7-9f0b-6dfa5ff04d2a"
+            },
+            {
+                "id": "89966cb0-c4ee-11e7-87a6-9d1dbef8787cc119",
+                "value": "01DD00039",
+                "text": "海勒展厅",
+                "cusbase_id": "89966cb0-c4ee-11e7-87a6-9d1dbefcc119",
+                "process": "out",
+                "cusagent_id": "da68caa0-ce5a-11e7-834b-d718c62454f4"
+            },
+            {
+                "id": "ebaefd00-4cc3-11e7-b9d8-255fe5d68465a1",
+                "value": "01DD0008",
+                "text": "龙威",
+                "cusbase_id": "ebaefd00-4cc3-11e7-b9d8-255fe5d684a1",
+                "process": "out",
+                "cusagent_id": "dad63400-ce5a-11e7-aabd-270281def300"
+            },
+            {
+                "id": "991dc280-4c2d-11e7-9652-c1c70da93d767a9",
+                "value": "01DD0025",
+                "text": "梦工场",
+                "cusbase_id": "991dc280-4c2d-11e7-9652-c1c70da93da9",
+                "process": "out",
+                "cusagent_id": "da6213c0-ce5a-11e7-a067-47355487127c"
+            },
+            {
+                "id": "5e104c40-8869-11e7-993a-67d12750433656",
+                "value": "03DD00034",
+                "text": "金生金",
+                "cusbase_id": "5e104c40-8869-11e7-993a-d12750433656",
+                "process": "out",
+                "cusagent_id": "dababc50-ce5a-11e7-852b-5f67905dd3c0"
+            },
+            {
+                "id": "0e93c6a0-b313-11e7-a9d6-534c4657feb96b7a",
+                "value": "03DD00037",
+                "text": "龙天",
+                "cusbase_id": "0e93c6a0-b313-11e7-a9d6-534cfeb96b7a",
+                "process": "out",
+                "cusagent_id": "dacf5610-ce5a-11e7-8aa6-4d7cf7633b6d"
+            },
+            {
+                "id": "742f5ab0-cc31-11e7-9b47-3b6-000f725cfcc",
+                "value": "11",
+                "text": "老凤祥",
+                "cusbase_id": "742f5ab0-cc31-11e7-9b47-3b60f725cfcc",
+                "process": "out",
+                "cusagent_id": "da988de0-ce5a-11e7-9260-9131475f7d15"
+            },
+            {
+                "id": "8a5b6d00-46eb-11e8-a118-5102c148974a5ad",
+                "value": "1111111",
+                "text": "暗暗3",
+                "cusbase_id": "8a5b6d00-46eb-11e8-a118-5102c144a5ad",
+                "process": "out",
+                "cusagent_id": "f39427a0-6249-11e8-bef7-df4edb4915e4"
+            },
+            {
+                "id": "444137c0-446a-11e8-81c8-3bf8683ba17547",
+                "value": "1113333",
+                "text": "zyw1",
+                "cusbase_id": "444137c0-446a-11e8-81c8-3bf83ba17547",
+                "process": "out",
+                "cusagent_id": "f3823940-6249-11e8-b684-cfeaabe0a756"
+            },
+            {
+                "id": "502baae0-4607-11e8-8d575e-2ff72d979018",
+                "value": "112222",
+                "text": "粤通黄金",
+                "cusbase_id": "502baae0-4607-11e8-8d5e-2ff72d979018",
+                "process": "out",
+                "cusagent_id": "f3a1b3e0-6249-11e8-b24d-932896b16bb4"
+            },
+            {
+                "id": "6d8e6cd0-46db-11e8-a347658bb-bb5d78c0f5d9",
+                "value": "121123",
+                "text": "12123",
+                "cusbase_id": "6d8e6cd0-46db-11e8-a3bb-bb5d78c0f5d9",
+                "process": "out",
+                "cusagent_id": "aa345b50-46dd-11e8-bf9b-7f972c448671"
+            }
+        
+        ]
+    }
