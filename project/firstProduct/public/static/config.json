@@ -1,0 +1,12 @@
+{
+  "result": false,
+  "message":"message",
+  "_csrf":"sdfsdfsdfdsfdsdfdfdsf=====",
+  "baseUrl": "",
+  "menuId":"12345",
+  "errorNo": -1,
+  "loginUrl": "../static/config_login.json",
+  "loginUrl2": "/site/login",
+  "tableUrl": "table.json",
+  "style": "/order/style"
+}
