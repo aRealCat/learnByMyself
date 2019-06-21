@@ -15,6 +15,7 @@
     "ordered-imports": false,
     "no-console": false,
     "whitespace": false,
+    "space-before-function-paren": ["error", "never"],
     "prefer-const": false,
     "no-unused-expression": false,
     "no-unsafe-any": false,

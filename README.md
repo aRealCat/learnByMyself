@@ -24,3 +24,6 @@ typescripts + vue:
 
 nodejs + websocket聊天室：https://www.cnblogs.com/Wayou/p/hichat_built_with_nodejs_socket.html
 mysql: https://www.cnblogs.com/morgana/p/8491293.html
+
+#全屏布局的几种方法
+https://www.cnblogs.com/xiaohuochai/p/5458068.html
