@@ -2,7 +2,7 @@
    <div  class="content">
     <div class="header">
       <div class="h-bar">
-        <img src="../assets/hiramlogo.png" alt="">
+        <!-- <img src="../assets/hiramlogo.png" alt=""> -->
       </div>
       <div class="main-title" style="font-size: 36px;color: #fff;">
         Vue + Typescript + Electron
