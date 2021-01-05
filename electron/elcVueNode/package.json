@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@types/lodash": "^4.14.123",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "ejs": "~2.5.7",
     "electron-connect": "^0.6.3",
     "element-ui": "^2.4.1",
