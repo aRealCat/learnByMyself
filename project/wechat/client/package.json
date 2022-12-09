@@ -22,7 +22,7 @@
     "babel-polyfill": "^6.26.0",
     "echarts": "^4.2.0-rc.1",
     "element-ui": "^2.4.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "font-awesome": "^4.7.0",
     "handsontable-pro": "git+https://github.com/hiramhub/handsontable-pro.git",
     "lodash": "^4.17.5",
